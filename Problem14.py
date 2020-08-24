@@ -14,4 +14,5 @@
 #         n = int(n)
 #     return sum_digit
 #
-#
+## print(sum_digits(pow(1000)))
+
