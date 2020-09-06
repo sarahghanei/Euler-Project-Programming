@@ -1,18 +1,36 @@
-# # Euler project Problem 16
-# def pow(n):
-#     result = 2
-#     for i in range(1, n):
-#         result *= 2
-#     return result
-#
-#
-# def sum_digits(n):
-#     sum_digit = 0
-#     while n > 0:
-#         sum_digit += int(n % 10)
-#         n = n // 10
-#         n = int(n)
-#     return sum_digit
-#
-## print(sum_digits(pow(1000)))
 
+# # Euler project Problem 14
+# def create_chain(n):
+#     chain = []
+#     if n % 2 == 0:
+#         chain.append(n)
+#         while n != 1:
+#             if n % 2 == 0:
+#                 n /= 2
+#             else:
+#                 n = 3 * n + 1
+#             chain.append(n)
+#     else:
+#         chain.append(n)
+#         while n != 1:
+#             if n % 2 == 0:
+#                 n /= 2
+#             else:
+#                 n = 3 * n + 1
+#             chain.append(n)
+#     return chain
+#
+#
+# max_starter = 0
+# number = 2
+# max_size = 0
+#
+# while number < 1000000:
+#     sequence = create_chain(number)
+#     # print(sequence[0])
+#     if len(sequence) > max_size:
+#         max_size = len(sequence)
+#         max_starter = sequence[0]
+#     number += 1
+# print("Maximum starter with longest chain is : ", max_starter)
+# print("Longest chain is : ", sequence)
