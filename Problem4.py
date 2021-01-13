@@ -1,4 +1,5 @@
 # # Euler project Problem 4
+#finding max palindrome
 # def is_palindrome(num):
 #     num = str(num)
 #     if num != num[::-1]:
